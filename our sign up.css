@@ -1,0 +1,61 @@
+body {
+    background-color: #f7e7f9;
+  }
+  
+  .Wao {
+    margin-top: 50px;
+  }
+  
+  form {
+    background-color: #d3c5e5;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h5.section-title {
+    color: #3b2e5a;
+  }
+  
+  .bg-secondary {
+    background-color: #845ec2;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #3b2e5a;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: #f7e7f9;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input:focus,
+  form select:focus {
+    background-color: #e2d0e9;
+  }
+  
+  form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #845ec2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #522d80;
+  }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="our home page.css">
+  <style>
+    /* Include your CSS styles here */
+  </style>
+</head>
+<body>
+    <!--Header section-->
+    <header><h1>*TALII ET DOLAA SHOPPING MALL*</h1></header>
+        <div class="logo"></div>
+        <nav >
+            <ul>
+                <li><a href="our home page.html">Home</a></li>
+                  <li><a href="our product page.html">Products</a></li>
+                <li><a href="our contact us.html">Contact Us</a></li>
+                <li><a href="our about Us.html">About Us</a></li>
+                </li>
+            </ul>
+        </nav>
+       
+        <hr>
+       
+  <div class="slider-container">
+    <div class="slider">
+      <img src="c:\Users\HP\OneDrive\Imagens\3db0b6f4d5dbf6f84a6fe09d2ae1b791.jpg" alt="Product 2" />    
+        
+    </div>
+    <div class="details-box">
+      <h1>Get High Quality Products For<br> Cheap & Reasonable Price</h1>
+      <h3>Discover Now</h3>
+      <a href="our product page.html">
+      <button>Shop</button>
+      </a>
+    </div>
+  </div>
+  <hr>
+  <center><h2>Best Selling products</h2>
+<h3>Fill your closet with our trendy clothes</h3>
+</center>
+<main>
+  <section class="product-grid">
+    <div class="product">
+        <img src="c:\Users\HP\Pictures\Saved Pictures\cartoon cardigan.jpg" alt="Product 1">
+        <h3>cartoon cardigant</h3>
+        <p class="price"></p>
+        <button>Add to Cart</button>
+    </div>
+</section>
+<section class="product-grid">
+    <div class="product">
+        <img src="c:\Users\HP\Pictures\Saved Pictures\midnight chunky sneakers.jpg" alt="Product 1">
+        <h3>chunky sneakers</h3>
+        <p class="price"></p>
+        <button>Add to Cart</button>
+    </div></section>
+    <section class="product-grid">
+        <div class="product">
+            <img src="c:\Users\HP\Pictures\Saved Pictures\nightfall formal pants.jpg" alt="Product 1">
+            <h3>nightfall pants</h3>
+            <p class="price"></p>
+            <button>Add to Cart</button>
+        </div></section>
+        <section class="product-grid">
+            <div class="product">
+                <img src="c:\Users\HP\Pictures\Saved Pictures\men's bear hoodie.jpg" alt="Product 1">
+                <h3>men's bear hoodie</h3>
+                <p class="price"></p>
+                <button>Add to Cart</button>
+            </div></section>
+            <section class="product-grid">
+                <div class="product">
+                    <img src="c:\Users\HP\Pictures\Saved Pictures\Nike Air Jordan 1.jpg" alt="Product 1">
+                    <h3>Nike Air Jordan 1</h3>
+                    <p class="price"></p>
+                    <button>Add to Cart</button>
+                </div></section>
+               
+                    <section class="product-grid">
+                        <div class="product">
+                            <img src="c:\Users\HP\Pictures\Saved Pictures\pastel blue mary janes high heels.jpg" alt="Product 1">
+                            <h3>mary janes heels</h3>
+                            <p class="price"></p>
+                            <button>Add to Cart</button>
+                        </div></section>
+                         </main>
+<footer>
+  <p>&copy; 2024 Talii et Dolaa Shopping Mall. All rights reserved done by Talii and Dolaa .</p>
+</footer>
+
+
+  <script>
+// Global Variables
+const slider = document.querySelector('.slider');
+const sliderImages = document.querySelectorAll('.slider img');
+let currentSlide = 0; // set slide index
+const slideAmount = sliderImages.length;
+const slideTime = 9000; // time to transition between slides
+const slideDelay = 300; // delay time between slide transitions
+let interval;
+
+function startInterval() {
+  interval = setInterval(nextSlide, slideTime + slideDelay);
+}
+
+function nextSlide() {
+  const slideWidth = slider.clientWidth;
+  // Set transition speed and transform the slider
+  slider.style.transition = `transform ${slideTime/300}s ease-out`;
+  slider.style.transform = `translateX(-${slideWidth * (currentSlide+1)}px)`;
+  currentSlide++;
+
+  if(currentSlide === slideAmount - 1) {
+    // We are at last slide, loop back
+    setTimeout(() => {
+      slider.style.transition = `translateX(0px`;
+      slider.style.transform = `translateX(0px)`;
+      currentSlide = -1;
+    }, slideDelay);
+  }
+}
+
+// Start interval for auto sliding
+startInterval();
+  </script>
+</body>
+</html>
